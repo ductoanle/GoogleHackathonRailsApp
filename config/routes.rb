@@ -1,4 +1,6 @@
 GoogleTVHackathon::Application.routes.draw do
+  resources :users, only: [:index, :create, :update, :show]
+  resources :events, only: [:index, :create, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

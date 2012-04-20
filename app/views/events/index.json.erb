@@ -1,0 +1,12 @@
+<% if @events.present? %>
+	[
+		<% @events.each do |event| %>
+			{
+				"user_id" : "<%= event.user_id %>",
+				"channel_id" : "<%= event.channel_id %>",
+				"media_id" : "<%= event.media_id %>",
+				"event_time" :" <%= event.event_time %>"
+			}
+		<% end %>
+	]
+<% end %>
