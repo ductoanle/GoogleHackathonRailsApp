@@ -1,6 +1,6 @@
 <% if @users.present? %>
 	[
-		<% @users.each_with_index do |index,user| %>
+		<% @users.each_with_index do |user,index| %>
 			{
                 "id" : <%= user.id %>,
 				"username" : "<%= user.username %>",
@@ -8,7 +8,9 @@
 				"status" : "<%= user.status %>",
 				"media_id" : <%= user.media_id.present? ? user.media_id : -1 %>
 			}
-            <% p ',' unless index == @users.length %>
+            <% if index != @users.length - 1 %>
+            ,
+            <% end %>
 		<% end %>
 	]
 <% end %>
