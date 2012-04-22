@@ -90,7 +90,7 @@
       <file leaf-file-name="index.json.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.json.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="0.18929017">
+            <state line="10" column="52" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2366127">
               <folding />
             </state>
           </provider>
@@ -749,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.json.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="58" selection-start="275" selection-end="275" vertical-scroll-proportion="0.18929017">
+        <state line="10" column="52" selection-start="371" selection-end="371" vertical-scroll-proportion="0.2366127">
           <folding />
         </state>
       </provider>
