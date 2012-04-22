@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
   def find_user
     username = params[:username]
-    return -1 unless username.present? && User.find_by_username(username).present
+    return -1 unless username.present? && User.find_by_username(username).present?
     User.find_by_username(username).id
   end
 
