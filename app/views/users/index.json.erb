@@ -6,7 +6,7 @@
 				"username" : "<%= user.username %>",
 				"display_name" : "<%= user.display_name %>",
 				"status" : "<%= user.status %>",
-				"media_id" : "<%= user.media_id %>"
+				"media_id" : <%= user.media_id.present? ? user.media_id : -1 %>
 			}
 		<% end %>
 	]
