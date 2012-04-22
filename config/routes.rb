@@ -1,5 +1,9 @@
 GoogleTVHackathon::Application.routes.draw do
-  resources :users, only: [:index, :create, :update, :show]
+  resources :users, only: [:index, :create, :update, :show] do
+    collection do
+      get 'find_user'
+    end
+  end
   resources :events, only: [:index, :create, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -14,7 +14,13 @@ class UsersController < ApplicationController
     attrs =  USER_ATTRIBUTES.find_all{|a| params.has_key? a}.each_with_object({ }) { |k,o| o[k.underscore.to_sym] = params[k] }
 		user =  User.create(attrs)
 		redirect_to user_path(:id => user.id)
-	end
+  end
+
+  def find_user
+    username = params[:username]
+    return -1 unless username.present? && User.find_by_username(username).present
+    User.find_by_username(username).id
+  end
 
 	def show
     respond_to do |format|

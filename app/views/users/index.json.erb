@@ -2,11 +2,11 @@
 	[
 		<% @users.each do |user| %>
 			{
-                "id" : "<%= user.id %>",
+                "id" : <%= user.id %>,
 				"username" : "<%= user.username %>",
 				"display_name" : "<%= user.display_name %>",
 				"status" : "<%= user.status %>",
-				"media_id" :" <%= user.media_id %>"
+				"media_id" :<%= user.media_id %>
 			}
 		<% end %>
 	]
