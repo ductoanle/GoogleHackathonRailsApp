@@ -18,8 +18,8 @@ class UsersController < ApplicationController
 
   def find_user
     username = params[:username]
-    return -1 unless username.present? && User.find_by_username(username).present?
-    User.find_by_username(username).id
+    render :text => "-1" unless username.present? && User.find_by_username(username).present?
+    render :text => "#{User.find_by_username(username).id}"
   end
 
 	def show
